@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* service bg section start */
+.services-banner{
+  background-image: url("/public/IMAGES/services-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+}
+.services-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1;
+}
+.services-banner h1{
+  opacity: 1;
+  z-index: 3;
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+
+/* service bg section end */
+
